@@ -53,6 +53,12 @@ class CalculatorTest {
 		assertEquals(0, p);
 	}
 	
+	/**
+	 * 
+	 * @param arg1
+	 * @param arg2
+	 * @param somme
+	 */
 	@ParameterizedTest(name = "{0} + {1} egal {2}")
 	@CsvSource(value = {"1,1,2","2,3,5","0,10,10"})
 	public void parameterizedAddTest(int arg1, int arg2 , int somme) {
@@ -99,6 +105,7 @@ class CalculatorTest {
 		// THEN
 		Set<Integer> expectedDigits = Stream.of(5, 7, 8, 9).collect(Collectors.toSet());
 		//assertEquals(expectedDigits, actualDigits);
+		//TODO
 		assertThat(expectedDigits).containsExactlyInAnyOrder(5, 7, 8, 9);
 	}
 }

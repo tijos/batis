@@ -23,6 +23,12 @@ public class Calculator {
 		return a + b;
 	}
 
+	/**
+	 * 
+	 * @param a
+	 * @param b
+	 * @return
+	 */
 	public double multiply(double a, double b) {
 		return a * b;
 	}
