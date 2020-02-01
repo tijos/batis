@@ -2,25 +2,63 @@ package batis.com;
 
 import java.util.Set;
 
+/**
+ * 
+ * @author tijos
+ *
+ */
 public class Calculator {
 
-	public int add(int a, int b) {
-		
-		return a + b;
+
+	/**
+	 * 
+	 * @param fistersNumber
+	 * @param secondeNumber
+	 * @return
+	 */
+	public int add(final int fistersNumber,final int secondeNumber) {
+		return fistersNumber + secondeNumber;
 	}
 
-	public int mutiply(int a, int b) {
-		
-		return a * b;
+	/**
+	 * 
+	 * @param fistersNumber
+	 * @param secondeNumber
+	 * @return
+	 */
+	public int mutiply(final int fistersNumber,final int secondeNumber) {
+
+		return fistersNumber * secondeNumber;
 	}
 
-	public Set<Integer> digitsSet(int number) {
+	/**
+	 * 
+	 * @param number
+	 * @return
+	 */
+	public Set<Integer> digitsSet(final int number) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	public double add(double a, double b) {
-		return a + b;
+	/**
+	 * 
+	 * @param fistersNumber
+	 * @param secondeNumber
+	 * @return
+	 */
+	public double add(final double fistersNumber,final double secondeNumber) {
+		return fistersNumber + secondeNumber;
+	}
+
+	/**
+	 * 
+	 * @param fistersNumber
+	 * @param secondeNumber
+	 * @return
+	 */
+	public double division(final int fistersNumber,final int secondeNumber) {
+		return fistersNumber / secondeNumber;
 	}
 
 	/**
@@ -29,7 +67,7 @@ public class Calculator {
 	 * @param b
 	 * @return
 	 */
-	public double multiply(double a, double b) {
-		return a * b;
+	public double multiply(final double fistersNumber,final double secondeNumber) {
+		return fistersNumber * secondeNumber;
 	}
 }
